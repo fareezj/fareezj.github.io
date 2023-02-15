@@ -18,12 +18,12 @@
       zetrixConnect
         .auth()
         .then((res) => {
-          document.getElementById("test2").innerHTML = "Success: " + res.toString();
+          document.getElementById("test2").innerHTML = "Success: " + JSON.stringify(res) + res.toString();
           console.log(res);
         })
         .catch((e) => {
           console.log(e);
-          document.getElementById("test2").innerHTML = "error: " JSON.stringify(e);
+          document.getElementById("test2").innerHTML = "error: " + JSON.stringify(e);
         });
     };
 
