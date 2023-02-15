@@ -18,7 +18,7 @@
       zetrixConnect
         .auth()
         .then((res) => {
-          document.getElementById("test2").innerHTML = JSON.stringify(res);
+          document.getElementById("test2").innerHTML = "Success: " + res.toString();
           console.log(res);
         })
         .catch((e) => {
