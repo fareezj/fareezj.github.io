@@ -4,7 +4,7 @@
     <h1>Zetrix Wallet Integration</h1>
   </body>
   <script type="module">
-    import ZetrixWalletConnect from "https://cdn.skypack.dev/pin/zetrix-connect-wallet-sdk@v1.1.4-Ua4VpKj6R9MAVgVTkxYu/mode=imports/optimized/zetrix-connect-wallet-sdk.js";
+    import ZetrixWalletConnect from "https://cdn.skypack.dev/zetrix-connect-wallet-sdk@1.1.3";
 
     const options = {
       bridge: 'wss://test-wscw.zetrix.com'
@@ -20,11 +20,10 @@
       document.getElementById("test").innerHTML = "Calling Auth";
       zetrixConnect
         .auth()
-        .then((res) {
-          Print.postMessage(JSON.stringify(res));
-          document.getElementById("test2").innerHTML = "Success: " + JSON.stringify(res) + res.toString() + "!!";
-          console.log(res);
-        })
+        .then((res) => {
+        document.getElementById("test2").innerHTML = JSON.stringify(res);
+        console.log(res);
+      })
         .catch((e) => {
           console.log(e);
           document.getElementById("test2").innerHTML = JSON.stringify(e);
