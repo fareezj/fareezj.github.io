@@ -7,6 +7,10 @@
           "8Z7VU84FZX.com.zetrix.wallet.rqt"
         ],
         "paths": [
+          {
+            "/":"/addressBook",
+            "comment":"Matches URL with a path /login"
+          },
           "*"
         ],
         "components": [
