@@ -12,6 +12,15 @@
     "relation": ["delegate_permission/common.handle_all_urls"],
     "target": {
       "namespace": "android_app",
+      "package_name": "com.zetrix.wallet.app.rqt.inner",
+      "sha256_cert_fingerprints":
+        ["94:0E:37:D3:33:D0:60:91:84:60:80:FD:08:82:8C:0C:C7:CF:82:57:93:36:15:53:19:87:C3:14:60:EC:1F:50"]
+    }
+  },
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
       "package_name": "com.zetrix.wallet.app.rqt.dev",
       "sha256_cert_fingerprints":
         ["94:0E:37:D3:33:D0:60:91:84:60:80:FD:08:82:8C:0C:C7:CF:82:57:93:36:15:53:19:87:C3:14:60:EC:1F:50"]
