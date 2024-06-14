@@ -8,8 +8,8 @@
         ],
         "paths": [
           {
-            "/":"/addressBook",
-            "comment":"Matches URL with a path /login"
+            "/":"/emailSuccess",
+            "comment":"Navigate to email verification success screen"
           },
           "*"
         ],
